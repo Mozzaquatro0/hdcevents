@@ -14,6 +14,7 @@ use App\Http\Controllers\EventController;
 |
 */
 
-Route::get('/', [EventController::class, 'index']);
-Route::get('/events/create', [EventController::class, 'create']);
-Route::post('/events',[EventController::class, 'store']);
+Route::get('/', [EventController::class, 'index']); //mostra todos os registros
+Route::get('/events/create', [EventController::class, 'create']); //criar registro no banco
+Route::get('/events/{id}', [EventController::class, 'show']); //mostrar um dado em específico
+Route::post('/events',[EventController::class, 'store']); //enviar os dados para o banco
