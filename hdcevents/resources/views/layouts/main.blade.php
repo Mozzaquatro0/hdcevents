@@ -16,6 +16,30 @@
         <script src="/js/script.js"></script>
         
     <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse" id="navbar">
+                <a href="/" class="navbar-brand">
+                <h5>HDC Events</h5></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/events/create" class="nav-link">Criar Evento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Entrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Cadastrar</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        
+    </header>
     @yield('content')
         <footer>
             <p>HDC Events &copy 2023</p>
